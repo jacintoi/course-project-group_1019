@@ -17,9 +17,9 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 ## Team Members
 
-- Nathan Jacinto: 2nd Year Computer Science Student
+- Person 1: one sentence about you!
 - Eduardo Sequeira: Master of Applied Science Student
-- Person 3: one sentence about you!
+- Nathan Jacinto: 2nd Year Computer Science Student
 
 ## References
 
