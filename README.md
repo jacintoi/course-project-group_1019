@@ -6,17 +6,21 @@
 Details for Milestone are available on Canvas (left sidebar, Course Project) or [here](https://firas.moosvi.com/courses/data301/project/milestone01.html).
 
 ## Describe your topic/interest in about 150-200 words
--	We are interested in videogames, and statistics about it.
--	We want to find any correlation between the data and make conclusions.
-o	How do console sales compare to PC sales?
-o	Do higher critic scores lead to more sales?
-o	Do game ratings lead to more sales?
-o	Are critic scores for games usually close to user scores?
-o	In the transition year when new gen consoles were released (2013), the games that sold on both old gen and new gen, which consoles sold better? Example – Assassin’s Creed IV which was on X360, PS3, XOne an PS4.
-Or games that initially sold on old gen consoles and then were ported again to next gen – like GTA V, Battlefield 4, COD: Ghosts, etc.
-o	Compare sales of consoles to handheld consoles.
--	This data analysis and conclusions to our questions and curiosities could be presented in a Dashboard.
--By Ed
+We are interested in videogames, and the statistics around it.
+
+In combining these two interests, we want to carry out a data analysis on videogame data, specifically regarding the sales of videogames. 
+
+We want to find correlations in the data and make conclusions from it, and also try to target and answer some more direct questions.
+
+These questions include:
+- How do console sales compare to PC sales?
+- Do higher critic scores lead to more sales? 
+- Do game more game ratings lead to more sales?
+- Do the critics' ratings of games ever vary wildly from users'?
+
+We are also interested in graphically representing the distribution of videogame sales, and perhaps, based on the dataset, be able to provide some insight into other areas. Such as, the age old questions of Consoles VS PC, and Xbox VS PlayStation based on sales and success of multi-platform games.
+
+This data analysis and conclusions on our curiosities and questions can be presented in a Dashboard.
 
 ## Describe your dataset in about 150-200 words
 
