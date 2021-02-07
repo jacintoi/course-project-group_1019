@@ -49,7 +49,7 @@ This information was collected for public interest and for fun for those investe
 - Aidan Murphy: 3rd Year Computer Science Student
 - Eduardo Sequeira: Master of Applied Science Student
 - Nathan Jacinto: 2nd Year Computer Science Student
-
+h
 ## References
 
 https://www.kaggle.com/rush4ratio/video-game-sales-with-ratings
