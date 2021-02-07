@@ -24,19 +24,25 @@ This data analysis and conclusions on our curiosities and questions can be prese
 
 ## Describe your dataset in about 150-200 words
 
--	Data-mined dataset from a videogame reporting website.
--	Dataset with information regarding videogame:
-o	Names
-o	Genre
-o	Platform
-o	Sale Numbers
-o	Critic Scores
-o	User Scores
-o	Rating 
--	Over 16,500 games which released from 1980 to 2016.
--	This information was collected for public interest and just for fun for those invested in seeing these videogame statistics.
--	The data was scraped from a website by an individual. 
--By Ed
+This dataset was data-mined from seperate websites. Data on the videogame sales was taken from Vgchartz, and the data on the videogame ratings was from Metacritic. 
+
+The Metacritic website only covers a subset of all the videogames, as it is based on the platform of the game. Due to this, the reviews for the games, both critics' and users', is not present for every single videogame mentioned in the dataset. However, the number of complete cases for videogames in this dataset (meaning that all the information for all the columns is present) is roughly 6,900 cases – meeting the threshold of over usable 5,000 data entries. 
+
+The dataset contains information regarding the following videogame attributes:
+- Names
+- Genre
+- Platform
+- Sale Numbers
+- Critic Scores
+- User Scores
+- Content Rating 
+- Etc.
+
+In total, the dataset covers over 16,500 games which released between 1980 to 2016.
+
+A previous dataset which was a webscrape of Vgchartz inspired the dataset creator to expand on that and add to it. 
+
+This information was collected for public interest and for fun for those invested in seeing these videogame statistics.
 
 ## Team Members
 
@@ -46,4 +52,4 @@ o	Rating
 
 ## References
 
-{Add your stuff here}
+https://www.kaggle.com/rush4ratio/video-game-sales-with-ratings
