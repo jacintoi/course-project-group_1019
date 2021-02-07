@@ -44,14 +44,14 @@ A previous dataset which was a webscrape of Vgchartz inspired the dataset creato
 
 This information was collected for public interest and for fun for those invested in seeing these videogame statistics.
 
-Note: This Dataset was checked and approved by Amir.
+Note: This dataset was checked and approved by Amir.
 
 ## Team Members
 
 - Aidan Murphy: 3rd Year Computer Science Student
 - Eduardo Sequeira: Master of Applied Science Student
 - Nathan Jacinto: 2nd Year Computer Science Student
-h
+
 ## References
 
 https://www.kaggle.com/rush4ratio/video-game-sales-with-ratings
