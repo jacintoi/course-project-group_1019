@@ -1,20 +1,21 @@
 [![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=359229&assignment_repo_type=GroupAssignmentRepo)
-# Group 1019 - {Video Game Sales Analysis }
+# Group 1019 - {Video Game Sales Analysis}
 
-## Milestones
-
-Details for Milestone are available on Canvas (left sidebar, Course Project) or [here](https://firas.moosvi.com/courses/data301/project/milestone01.html).
-
-## Describe your topic/interest in about 150-200 words
+## Describe your topic/interest
 We are interested in videogames, and the statistics around it.
 
 In combining these two interests, we want to carry out a data analysis on videogame data, specifically regarding the sales of videogames. 
 
 We want to find correlations in the data and make conclusions from it, and also try to target and answer some more direct questions.
 
-These questions include:
+Some questions and topics of interest include:
 - How do console sales compare to PC sales?
 - Do higher critic scores lead to more sales? 
+- Which genre of game tends to sell better?
+- Finding any correlations between game ratings, sales, and genre.
+- The correlation between years of game releases and game sales.
+- Which videogame development companies hold the most sales for their games?
+- Any correlation between sales and the number of years has been out?
 - Do games with more game ratings / reviews lead to more sales?
 - Do the critics' ratings of games ever vary wildly from users'?
 
@@ -22,11 +23,10 @@ We are also interested in graphically representing the distribution of videogame
 
 This data analysis and conclusions on our curiosities and questions can be presented in a Dashboard.
 
-## Describe your dataset in about 150-200 words
-
+## Describe your dataset
 This dataset was data-mined from seperate websites. Data on the videogame sales was taken from Vgchartz, and the data on the videogame ratings was from Metacritic. 
 
-The Metacritic website only covers a subset of all the videogames, as it is based on the platform of the game. Due to this, the reviews for the games, both critics' and users', is not present for every single videogame mentioned in the dataset. However, the number of complete cases for videogames in this dataset (meaning that all the information for all the columns is present) is roughly 6,900 cases – meeting the threshold of over usable 5,000 data entries. 
+The *Metacritic* website only covers a subset of all the videogames, as it is based on the platform of the game. Due to this, the reviews for the games, both critics' and users', is not present for every single videogame mentioned in the dataset. However, the number of complete cases for videogames in this dataset (meaning that all the information for all the columns is present) is roughly 6,900 cases – meeting the required threshold of having over 5,000 usable data entries. 
 
 The dataset contains information regarding the following videogame attributes:
 - Names
@@ -38,7 +38,7 @@ The dataset contains information regarding the following videogame attributes:
 - Content Rating 
 - Etc.
 
-In total, the dataset covers over 16,500 games which released between 1980 to 2016.
+In total, the dataset covers over **16,500 games** which released between **1980 to 2016**.
 
 A previous dataset which was a webscrape of Vgchartz inspired the dataset creator to expand on that and add to it. 
 
@@ -54,4 +54,4 @@ Note: This dataset was checked and approved by Amir.
 
 ## References
 
-https://www.kaggle.com/rush4ratio/video-game-sales-with-ratings
+*[Kaggle, video game sales with ratings - original source](https://www.kaggle.com/rush4ratio/video-game-sales-with-ratings)*
