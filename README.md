@@ -15,7 +15,7 @@ We want to find correlations in the data and make conclusions from it, and also 
 These questions include:
 - How do console sales compare to PC sales?
 - Do higher critic scores lead to more sales? 
-- Do game more game ratings lead to more sales?
+- Do games with more game ratings / reviews lead to more sales?
 - Do the critics' ratings of games ever vary wildly from users'?
 
 We are also interested in graphically representing the distribution of videogame sales, and perhaps, based on the dataset, be able to provide some insight into other areas. Such as, the age old questions of Consoles VS PC, and Xbox VS PlayStation based on sales and success of multi-platform games.
@@ -49,7 +49,7 @@ This information was collected for public interest and for fun for those investe
 - Aidan Murphy: 3rd Year Computer Science Student
 - Eduardo Sequeira: Master of Applied Science Student
 - Nathan Jacinto: 2nd Year Computer Science Student
-h
+
 ## References
 
 https://www.kaggle.com/rush4ratio/video-game-sales-with-ratings
