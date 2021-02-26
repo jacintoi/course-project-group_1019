@@ -44,6 +44,8 @@ A previous dataset which was a webscrape of Vgchartz inspired the dataset creato
 
 This information was collected for public interest and for fun for those invested in seeing these videogame statistics.
 
+Note: This dataset was checked and approved by Amir.
+
 ## Team Members
 
 - Aidan Murphy: 3rd Year Computer Science Student
