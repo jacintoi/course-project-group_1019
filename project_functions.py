@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas_profiling as pdp
 
-dataclean = loadCleanFile()
+#dataclean = loadCleanFile()
 
 def loadCleanFile():
   #this function loads the csv to process it
