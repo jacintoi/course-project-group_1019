@@ -74,7 +74,6 @@ def getUniqueDevelopers():
 def getUniquePlatformsCount():
   return
 
-def 
 
 
 
