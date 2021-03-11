@@ -31,7 +31,7 @@ sys.path.insert(1, '../scripts')
 import project_functions
 
 ```
-![plot](Eduardo/Milestone%202)
+![plot](data301-2020-winter2/course-project-group_1019/blob/main/analysis/Eduardo/Milestone%202/Eduardo_EDA_Plots/sales_by_genre.png)
 
 
 
@@ -60,7 +60,7 @@ Platform can act as an isolated instance of videogame markets, where we can see 
 
 The things we first need to consider is that there will be variance in the popularity of Platforms across different regions in the world, and this can be the result of many different things, alot of which cannot be quantified; the culture and history of a region cannot be boiled down to numbers and data.
 
-The question we are looking at is can we measure how successful a videogame will be based on evidence retreived by looking at different consoles
+The question we are looking at is can we measure how successful a videogame will be based on evidence retreived by looking at the different platforms videogames are released on.
 //
 insert stuff here
 //
