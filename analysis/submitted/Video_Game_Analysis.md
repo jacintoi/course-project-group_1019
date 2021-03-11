@@ -54,11 +54,12 @@ each videogame can have up to 16 associated pieces of information, here is a des
 | Critic_Score      | mean of all ratings given by 'Critics'  (1-10)  |
 | Critic_Count   | the number of 'critic' ratings |
 | User_Score      | mean of all ratings given by 'non-Critics'  (1-100)  |
-| User_Count   | The number of 'non-Critic' |
-| Developer      | Title       |
-| Rating   | Text        |
+| User_Count   | The number of 'non-Critic' ratings |
+| Developer      | The name of the company who developed or programmed the videogame |
+| Rating   |the ESRB rating of the game (according to the ESRB [ratings guide](https://www.esrb.org/ratings-guide/))|
+*critics are considered to be "Metacritic staff", non-Critics are considered to be Metacritic subscribers*
 
-
+all analysis p
 We are going to start by cleaning the data:
   - removing all rows with na entries
   - removing user scores with TBD
@@ -82,8 +83,8 @@ Hopefully from this we can find some basic indicators for the success of a video
 - does a longer platform lifespan guarantee more sales?
 - Is competition a big factor in sales(does less competition mean more profits)?
 #
-### **regional bias**
-as mentioned previously we will look at how the sales of videogames from particular platforms differ by region, mainly just to see how the bias changes. I will do this by counting the number of videogames on each console, which have sales greater than 10,000 USD in each region.
+### **Regional bias**
+As mentioned previously we will look at how the sales of videogames from particular platforms differ by region, mainly just to see how the bias changes. I will do this by counting the number of videogames on each console, which have sales greater than 10,000 USD in each region.
 If one were to use only videogames available to all platforms, there would be very little data to observe so for this purposes of this analysis we will consider all videogames available to each platform.
 the data is shown below in figures 1.1-1.6:
 
