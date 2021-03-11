@@ -33,11 +33,12 @@ import project_functions
 
 ![plot](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Eduardo/Milestone%202/Eduardo_EDA_Plots/sales_by_genre_normalized.png?raw=true)
 ```
-img src="./Eduardo/Milstone 2/Eduardo_EDA_Plots/sales_by_genre.png" width="700px"
+<img src="./Eduardo/Milstone 2/Eduardo_EDA_Plots/sales_by_genre.png?raw=true" width="700px">
 ```
 #### Sample output
 <img src="../Eduardo/Milstone 2/Eduardo_EDA_Plots/sales_by_genre.png"/>
 
+![sales_by_genre_normalized](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Eduardo/Milestone%202/Eduardo_EDA_Plots/sales_by_rating.png?raw=true)
 
 ## Intro
 This analysis looks at the different aspects of videogames over the past ~40 years using a random sampls of videogames, representative of the entire industry, to relate real life qualitative events to measurable changes in the sales and consumption of videogames.
@@ -58,7 +59,7 @@ Cleaned_DataFrame.head()
 ## Platform
 Platform can act as an isolated instance of videogame markets, where we can see how they succeed based on certain conditions which vary for each platform. Of course the competition between each of these platforms must be considered, but generally we can examine these Platforms and their characteristic to see how well the videogames are selling for each of them.
 
-The things we first need to consider is that there will be variance in the popularity of Platforms across different regions in the world, and this can be the result of many different things, alot of which cannot be quantified; the culture and history of a region cannot be boiled down to numbers and data. So we will start by briefly looking at the affect locationtrying to consider quantitative factors that are measureable from the dataset.
+The things we first need to consider is that there will be variance in the popularity of Platforms across different regions in the world, and this can be the result of many different things, alot of which cannot be quantified; the culture and history of a region cannot be boiled down to numbers and data. So we will start by briefly looking at the effect location has on the trying to consider quantitative factors that are measureable from the dataset.
 
 Hopefully from this we can find some basic indicators for the success of a videogame, by looking at the different consoles games are released on.
 //
