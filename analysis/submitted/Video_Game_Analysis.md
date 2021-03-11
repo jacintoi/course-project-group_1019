@@ -34,9 +34,30 @@ import project_functions
 ## Intro
 This analysis looks at the different aspects of videogames over the past ~40 years using a random samples of videogames, representative of the entire industry, to relate real life qualitative events to measurable changes in the sales and consumption of videogames.
 
-The data used in this analysis was obtained from [kaggle]("https://www.kaggle.com/rush4ratio/video-game-sales-with-ratings"), and is a user compiled data set which extends a scrape already performed by Metacritic, *"a website that aggregates reviews of films, TV shows, music albums, video games and formerly, books"* [Wikipedia] (https://en.wikipedia.org/wiki/Metacritic). It includes over 16,000 unique video games, of which 6,825 entries have all entries complete.
+The data used in this analysis was obtained from [kaggle]("https://www.kaggle.com/rush4ratio/video-game-sales-with-ratings"), and is a user compiled data set of videogames, which extends a scrape already performed by Metacritic, *"a website that aggregates reviews of films, TV shows, music albums, video games and formerly, books"* [Wikipedia] (https://en.wikipedia.org/wiki/Metacritic). It includes over 16,000 unique video games, of which 6,825 have all entries complete.
 
-Each videogame has various pieces of information relating to it. As the extracted information will show, this dataset does not contain all videogames from 1980-2016, and and so in this analysis it is considered a sample of that set of all videogames.
+This dataset does not contain all videogames from 1980-2016, and and so in this analysis it is considered a sample of that set of all videogames.
+each videogame can have up to 16 associated pieces of information, here is a description of each of them:
+
+| Column Name     | Description |
+| ----------- | ----------- |
+| Name      | The name of the videogame       |
+| Platform   | The hardware need to play this videogame        |
+| Year_of_Release      | The year this game was first released       |
+| Genre   | What genre this videogame falls under(i.e. sports, shooter, racing)        |
+| Publisher      | The name of the company that finances the development and production of this videogame       |
+| NA_Sales   | The Number of units sold from its release until 2016 in North America(millions) |
+| EU_Sales      | The Number of units sold from its release until 2016 in Europe (millions|
+| JP_Sales   | The Number of units sold from its release until 2016 in Japan (millions)|
+| Other_Sales      | The Number of units sold from its release until 2016 in Regions outside of North America, Europe and Japan       |
+| Global_Sales   | The Number of units sold from its release until 2016 World Wide(millions)      |
+| Critic_Score      | mean of all ratings given by 'Critics'  (1-10)  |
+| Critic_Count   | the number of 'critic' ratings |
+| User_Score      | mean of all ratings given by 'non-Critics'  (1-100)  |
+| User_Count   | The number of 'non-Critic' |
+| Developer      | Title       |
+| Rating   | Text        |
+
 
 We are going to start by cleaning the data:
   - removing all rows with na entries
@@ -49,11 +70,11 @@ Cleaned_DataFrame.head()
 ```
 -----------------
 ## Platform
-The platforms a particular videogame is available to refers to the different hardwares which can be used to play the videogame.
+A videogame platform is the hardware used to play the videogame, and although it may seem arbitrary which culmination of plastic, circuitry and ingenuity is used to play a videogame, there are very big differences between them, both statistically and culturally.
 
-Platforms *can* act as an isolated instance of videogame markets, where we can see how videogames succeed based on certain conditions which vary for each platform, with some consideration for the competition between the companies who develop the platforms.
+Because of these differences, different platforms *can* act as an isolated instance of videogame markets, where we can see how videogames succeed based on certain conditions which vary for each platform.
 
-The things we first need to consider is that biases towards certain platforms will exist as a result of qualitative data. This is most obvious if we separate by region, as in some regions, particularly North-America, even outside of the videogame industry there exists a very strong bias towards American-made products, from the strong culture of nationalism. This will be looked at briefly, and then more in depth later on.
+We should first consider that biases towards certain platforms will exist. This bias is, although still very minimal, is most obvious when comparing by region. The culture and history of each region most certainly has an effect on the platform purchased by a particular individual.
 
 Hopefully from this we can find some basic indicators for the success of a videogame, by looking at the different Platforms games are released on. The focus will be on three things:
 
@@ -92,13 +113,12 @@ If the game was from before 1994, how/why was it rated?
 
 #
 
-Knowing what the areas of interest were in the column, we started off the EDA by focusing the data down to what was of interest: Names, Genres, Ratings, Global Sales, and Years of Release. We created a new dataset which was specifically to help answer these three questions, and chose to drop all the other dataset columns minus these five select ones.
+
+Knowing what the areas of interest were in the column, we started off the EDA by focusing the data down to what was of interest: Names,For the top three genres, we want to quickly take a look at some of the top sellers in each genre and check if there are any game series or titles that are easily recognizable.  Genres, Ratings, Global Sales, and Years of Release. We created a new dataset which was specifically to help answer these three questions, and chose to drop all the other dataset columns minus these five select ones.
 
 When looking into the Ratings column, we saw that there were still *"outdated"* ratings being used, in particular, the *K-A* rating. In 1994, the *K-A* rating, which was for Kids-Adults, was replaced with the *E* rating, which was for Everyone. To keep things consistent with the later games (since there is only one *K-A* rating in the entire cleaned dataset), we changed the *K-A* to *E* rating - avoiding any outliers in the data.
 
 With things cleaned further, we first made sure to take note and store the unique values for the Genres and the Ratings. These variables, kept as lists, would become useful later in the code when answering the questions of interest.
-
-#
 
 With everything set up and ready for the EDA, we can now begin looking to answering each of these three questions. 
 
@@ -109,6 +129,28 @@ To answer this, we plotted the unique genres versus the total global sales for t
 Below, the plot for the Videogame Genres vs Global Sales can be seen.
 
 ![Videogame Genres vs Global Sales](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Eduardo/Milestone%202/Eduardo_EDA_Plots/sales_by_genre.png)
+
+From the above bar chart, we see that the *most popular game genre* is Action, followed by Sports and Shooter close behind.
+
+Action games include your Grand Theft Auto (GTA) games, Assassin's Creed games, Uncharted games, etc. Most of these games are a part of larger series, often having more than two, three, and more in the overall game collection. As a result of this, and the sheer amount of games, there are 1630 games which are Action games. 
+
+For Sport games, we see that there is a total of 943 games. Sport games are fairly self explanatory, and include games like FIFA games, Wii Sports, NBA games, Madden, etc.
+
+Finally, Shooter games tend to be first person shooters, like the well known Call of Duty game series, and more games similar to that. In this genre, there are 864 games.
+
+Since there is such a variation in both the sales, roughly 1.2 billion, 833 million, and 816 million units in sales for Action, Sports, and Action games respectively, and the number of games in each genre, we were left wondering if the Action games genre came out first solely due to the fact that it had the most games, and therefore the more selling potential. 
+
+To address this, we chose to normalize the bar chart, to show how much a game of each genre will make *on average*! Like this, we can more accurately see which game genre tends to make the most sales per game.
+
+![Videogame Genres vs Global Sales](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Eduardo/Milestone%202/Eduardo_EDA_Plots/sales_by_genre_normalized.png)
+
+
+
+#
+
+
+
+
 
 ### *What is the correlation between game ratings, sales, and genre?*
 
