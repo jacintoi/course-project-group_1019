@@ -83,7 +83,7 @@ We should first consider that biases towards certain platforms will exist. This 
 Hopefully from this we can find some basic indicators for the success of a videogame, by looking at the different Platforms games are released on. The focus will be on three things:
 
 - ** *What correlation, if any, exists between the number of videogames available and the sales of videogames?* **
-- ** *how does the timefram teh console is active for affect its sales?* **
+- ** *how does the timeframe the console is active for affect its sales?* **
 - ** *Is competition a big factor in sales(does less competition mean more profits)?* **
 #
 ### **data setup**
@@ -152,7 +152,46 @@ The generation after *that* was different yet again and was when, we believe, th
 ### **competition and true comparison**
 The competition between platform developers was somewhat limited before 2010. One reason for this could be the limited online multiplayer experience before then, as once this environment became popular it was very important which platform you were playing on.
 
-Playing online, means to play a videogame with other people who are playing on the same brand platform as you, but in a physically different location, so you are connect via the internet.
+So lets compare two consoles who have had feirce competition after this boom in online gaming, and are also somewhat similar in the lenght of time they have been around, see *figure ddd.1*:
+
+///insert global sales and years active for consoles///
+*figure ddd*
+
+obviously PC is an outlier, so we removed it as predicted:
+
+///insert global sales and years active for consoles///
+*figure ddd.1*
+
+The XOne and PS4 are a pretty good choice, although relatively new, they are very similar, having been released within 7 days of each other.
+
+The global sales of the XOne, are half that of the PS4, and the mean global sales of PS4 are 1.3 times that of the XOne, so there are some comparisons to be made.
+the figures however appear to say that the only difference is found in the regional sales, where PS4 beats out XOne everywhere except north America, suggesting simply a high quality of product.
+
+///insert X and PS4 pngs///
+
+Microsoft produces XOne consoles and is based in North America, which leads to the assumption of brand loyalty and this idea of American Manufactoring and Nationalism tipping the scales in favor of XOne only in NA, whereas the rest of the world appears to choose the PS4.
+
+
+We could also look at the critic and user score averages for the games, and we can see that the critic ratings are approximately the same:( */100)
+
+XOne: 73.729560
+PS4: 72.669456
+
+but the user scores: ( */10)
+
+XOne: 6.493082
+PS4: 6.739331
+
+lean slightly in favour of the PS4, by about 2.4\% compared to the difference in critic scores: 1.1\%
+
+This in combination with the larger number of games might explain the PS4 mean Global Sales being slightly higher than the XOne mean global sales
+
+#
+
+- There doesn't appear to be any correlation between the number of videogames available and the mean sales of those videogames (there will be good selling videogames and badselling videogames, making more doesn't guarantee good or bad)
+- the timefram a console is active for does appear to have a big impact on global sales, see PS3, X360, and Wii, following well selling consoles
+- Competition does have a relatively large impact on sales
+
 
 --------------------
 ## Genres, Ratings, and Sales
