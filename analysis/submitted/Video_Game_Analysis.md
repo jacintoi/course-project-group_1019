@@ -4,17 +4,6 @@ In this project milestone, we set off to complete an exploratory data analysis (
 
 This general, combined, EDA is done in fulfilment of Task 5 for Milestone 2. This markdown is being completed after each of us individually completed our own EDA's and our own analyses, drawing conclusions individually first. This document is now a coalescence of all our individual parts into a single, summarative document which highlights the most important discoveries and take-aways from the seperate EDA's.
 
-## Instructions:
-- You should remain focused on your research question(s) - it is very easy to get lost down rabbit holes in data analyses projects.
-
-- If you find that your research questions are not that interesting, or you find more interesting questions (especially after your EDA) you may revise them, or add more.
-
-- Use the lab times, as well as our office hours (TAs and instructors), to get help and guidance on your analyses.
-
-- You should experiment with “plenty of” data visualizations to try and visualize your dataset and answer your research questions.
-
-- Give us a narrative/story of your explorations as you go along, in-line with your data - use the new Markdown skills you learned in Task 1!
-
 --------------------------
 ## Initialization:
 
@@ -34,7 +23,7 @@ sys.path.insert(1, '../scripts')
 ```
 
 -----------------------
-## Intro
+## Introduction
 This analysis looks at the different aspects of videogames over the past ~40 years using a random samples of videogames, representative of the entire industry, to relate real life qualitative events to measurable changes in the sales and consumption of videogames.
 
 The data used in this analysis was obtained from [kaggle](https://www.kaggle.com/rush4ratio/video-game-sales-with-ratings), and is a user compiled data set of videogames, which extends a scrape already performed by Metacritic, *"a website that aggregates reviews of films, TV shows, music albums, video games and formerly, books"* [Wikipedia](https://en.wikipedia.org/wiki/Metacritic). It includes over 16,000 unique video games, of which 6,825 have all entries complete.
@@ -74,6 +63,21 @@ the project_functions.py file includes this cleaning function, and can be found 
 Cleaned_DataFrame = project_functions.load_and_process()
 Cleaned_DataFrame.head()
 ```
+----------------
+
+## Research Questions
+
+In approaching this EDA, we had come up with some questions to help guide our personal data exploration through this general analysis. These questions are listed below. 
+
+- ***For what reasons are sales different between different platforms?***
+- 
+- Which videogame *genre* tends to *sell better / more*?
+- What is the *correlation* between *game ratings, sales, and genre*?
+- When did the ratings first begin for videogames? 
+- 
+
+These research questions were divided among us, and every team memeber was in charge of handling, analyzing and making conclusions for a handfull of questions. This was divided in groups, as these questions were grouped up based on their general areas of analysis. These were with the platforms and sales; genres, ratings, and sales; and pulishers, years and sales.
+
 -----------------
 ## Platforms and Sales
 A videogame platform is the hardware used to play the videogame, and although it may seem arbitrary which culmination of plastic, circuitry and ingenuity is used to play a videogame, there are very big differences between them, both statistically and culturally.
@@ -220,9 +224,12 @@ This in combination with the larger number of games might explain the PS4 mean G
 
 #
 
-- There doesn't appear to be any correlation between the number of videogames available and the mean sales of those videogames (there will be good selling videogames and badselling videogames, making more doesn't guarantee good or bad)
-- the timefram a console is active for does appear to have a big impact on global sales, see PS3, X360, and Wii, following well selling consoles
-- Competition does have a relatively large impact on sales
+There doesn't appear to be any correlation between the number of videogames available and the mean sales of those videogames (there will be good selling videogames and badselling videogames, making more doesn't guarantee good or bad).
+
+
+The timeframe a console is active for does appear to have a big impact on global sales, see PS3, X360, and Wii, following well selling consoles.
+
+Competition does have a relatively large impact on sales, the XOne and PS4 are a good example of competition, having a noticeably large impact on sales.
 
 
 --------------------
@@ -377,10 +384,16 @@ The first game (according to the dataset after it was cleaned) that was rated by
 
 
 ------------------
-## Conclusions
+## Summary
 
 - Releasing lots of games for a platform does guarantee the quality of those games, nor does releasing games for a long period of time, i.e. experience in the videogame industry does not appear to guarantee sales
-- competition has developed between platforms very recently due to advances in the capabilities of platforms, and the greater number of 'quality' platforms.
+
+- Competition has developed between platforms very recently due to advances in the capabilities of platforms, and the greater number of 'quality' platforms.
+
 - On average, the videogame sales based on the genres tends to be fairly close, though the most popular genres (based on the number of units sold) as those of the Misc., Platform, Shooter, and Sport genres.
+
 - The more popular game ratings are those games rated E and M, based on the average sales for each rating. This makes sense as these two ratings encompasses a siginificant portion of the genres present in this dataset.
+
 - The ESRB ratings began in 1994 which is when the ESRB was formed - however, there are also games which were **originally** released prior to this that are also rated. We discovered that these few games (those in the dataset that make up this condition) were all re-released at some point years later. It was this new release of the same game which recieved the ESRB rating, and due to both games, old and new, being nearly identical, the rating branched and applied as well to the original game.
+
+- 
