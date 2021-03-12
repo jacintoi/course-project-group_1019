@@ -115,11 +115,11 @@ the data is shown below in *Figures 1.2-1.6*:
 
 ///insert regional biases///
 
-| Regional      | Biases |
+| Regional Biases      |  |
 | ----------- | ----------- |
 | ![unique games purchased globally](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/numAvail.png) *Figure 1.2 - unique games purchased globally*     | ![unique games purchased globally](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/numAvailNA.png) *Figure 1.3 - unique games purchased in North America*     |
 | ![unique games purchased globally](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/numAvailEU.png) *Figure 1.4 - unique games purchased in Europe*   | ![unique games purchased globally](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/numAvailJP.png) *Figure 1.5 - unique games purchased in Japan*      |
-| ![unique games purchased globally](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/numAvailOther.png) *Figure 1.6 - unique games purchased in other parts of the world*   | ------- |
+| ![unique games purchased globally](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/numAvailOther.png) *Figure 1.6 - unique games purchased in other parts of the world*   |  |
 
 
 
