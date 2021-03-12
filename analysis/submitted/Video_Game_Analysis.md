@@ -1,7 +1,6 @@
 # Videogame Analysis EDA
----------------------
 
-
+In this project milestone, we set off to complete an exploratory data analysis task on a select dataset that was found publically available.
 
 ## Instructions:
 - You should remain focused on your research question(s) - it is very easy to get lost down rabbit holes in data analyses projects.
@@ -34,7 +33,7 @@ import project_functions
 ## Intro
 This analysis looks at the different aspects of videogames over the past ~40 years using a random samples of videogames, representative of the entire industry, to relate real life qualitative events to measurable changes in the sales and consumption of videogames.
 
-The data used in this analysis was obtained from [kaggle]("https://www.kaggle.com/rush4ratio/video-game-sales-with-ratings"), and is a user compiled data set of videogames, which extends a scrape already performed by Metacritic, *"a website that aggregates reviews of films, TV shows, music albums, video games and formerly, books"* [Wikipedia] (https://en.wikipedia.org/wiki/Metacritic). It includes over 16,000 unique video games, of which 6,825 have all entries complete.
+The data used in this analysis was obtained from [kaggle](https://www.kaggle.com/rush4ratio/video-game-sales-with-ratings), and is a user compiled data set of videogames, which extends a scrape already performed by Metacritic, *"a website that aggregates reviews of films, TV shows, music albums, video games and formerly, books"* [Wikipedia](https://en.wikipedia.org/wiki/Metacritic). It includes over 16,000 unique video games, of which 6,825 have all entries complete.
 
 This dataset does not contain all videogames from 1980-2016, and and so in this analysis it is considered a sample of that set of all videogames.
 each videogame can have up to 16 associated pieces of information, here is a description of each of them:
@@ -101,7 +100,7 @@ the data is shown below in *figures 1.2-1.6*:
 
 
 ///insert regional biases///
-*figure 1.2* *figure 1.3* *figure 1.4* *figure 1.5* * figure 1.6*
+*figure 1.2 - unique games purchased globally* *figure 1.3 - unique games purchased in North America* *figure 1.4 - unique games purchased in Europe* *figure 1.5 - unique games purchased in Japan* * figure 1.6 - unique games purchased in other parts of the world*
 
 Although the order of the number of videogames bought in each region for each platform varies from region to region, the general proportion of unique videogames purchased on each platform remains very similar.
 the region which sticks out the most is Japan, the general groupings of the Platforms remains the same but the order of those groupings change, i.e. the top 3 platforms with the most unique videogames are the same as the other regions however, PS2 is not #1 but #3.
@@ -121,13 +120,13 @@ We then looked at the same figures after they were normalized, first *figure 1.8
 
 ///insert mean global sales over all time for each platform///
 ![mean global sales over all time for each platform](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/mean%20global%20sales%20over%20all%20time%20for%20each%20console.png)
-*figure 1.8*
+*figure 1.8 - mean global sales per game for each platform*
 
 and then *figure 1.9*:
 
 ///insert Normalized global sales and games available///
 ![Normalized global sales and games available](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/mean%20global%20sales%20and%20games%20available.png)
-*figure 1.9*
+*figure 1.9 - mean global sales and unique games available scatter plo*
 
 from *figures 1.9 and 1.8* we can see that the PS and Wii platforms, have teh highest mean number of units sold per videogame, and that the previous leaders, were still competetitive but did not standout as they did previously. Particularly *figure 1.9* provided clear insight that releasing lots of videogames for a particular console had no straight-forward correlation to the number of units those videogames would sell. 
 We think this is pretty clear, but if you believe otherwise I challenge you to divine a simple relationship between the mean number of units sold per videogame, and the number of videogames available(using *figure 1.9*). 
@@ -141,7 +140,7 @@ Let's first have a look at the distrbution of videogame releases for each platfo
 
 ///insert distribution of games for each console///
 ![distribution of games for each console](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/distribution%20of%20games%20for%20each%20console.png)
-*figure 1.10*
+*figure 1.10 - distribution of videogame releases over time*
 
 here we can see that the lifespan of all of these platforms tends to be 4-10 years, with the GBA having active videogame releases for only 4 years, and the PS2 having active releases for a little over 10 years. The PC is the obvious outlier having released videogames for over 30 years, so we will end up removing it after confirming there is no fair comparison to it, as of 2016.
 
@@ -149,7 +148,7 @@ Let's know have a look at the mean year of release for videogames on each platfo
 
 ///insert Expected year of release vs global sales///
 ![Expected year of release vs global sales](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/expected%20year%20of%20release%20vs%20global%20sales.png)
-*figure 1.11*
+*figure 1.11 - average year of release, for a videogame, for a given platform*
 
 from *figure 1.11* we can see that there is an outlier in the PS2 and a spike in 2008-10 for certain platforms. Given our knowledge of the massive success of the PS, we can safely assume that the PS2's success was somewhat thanks to the rapport that people had with SONY (creator of the PS). This in turn propbably caused an increased demand for videogames, allowing the next generation of platforms (PS3, X360, Wii) to all experience great sales.
 
@@ -162,37 +161,37 @@ So lets compare two consoles who have had feirce competition after this boom in 
 
 ///insert global sales and years active for consoles///
 ![global sales and years active for consoles](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/Global%20sales%20and%20years%20active%20for%20consoles.png)
-*figure 1.12*
+*figure 1.12 - global sales compared to years active*
 
 obviously PC is an outlier, so we removed it as predicted:
 
 ///insert global sales and years active for consoles, adjusted///
 ![global sales and years active for consoles, outlier removed](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/Global%20sales%20and%20years%20active%20for%20consoles%2C%20adjusted.png)
-*figure 1.12a*
+*figure 1.12a - global sales compared to years active (outliers removed)*
 
 The XOne and PS4 are a pretty good choice, although relatively new, they are very similar, having been released within 7 days of each other.
 
 The global sales of the XOne, are half that of the PS4, and the mean global sales of PS4 are 1.3 times that of the XOne, so there are some comparisons to be made.
-the figures however appear to say that the only difference is found in the regional sales, where PS4 beats out XOne everywhere except north America, suggesting simply a high quality of product.
+the figures however appear to say that the only difference is found in the regional sales, where PS4 beats out XOne everywhere except north America, suggesting simply a high quality of product:
 
 ///insert X and PS4 pngs///
 ![XOne data](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/X.png)
 ![PS4 data](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/PS4.png)
 
-Microsoft produces XOne consoles and is based in North America, which leads to the assumption of brand loyalty and this idea of American Manufactoring and Nationalism tipping the scales in favor of XOne only in NA, whereas the rest of the world appears to choose the PS4, as seen in figure 1.13:
+Microsoft produces XOne consoles and is based in North America, which leads to the assumption of brand loyalty and this idea of American Manufactoring and Nationalism tipping the scales in favor of XOne only in NA, whereas the rest of the world appears to choose the PS4, as seen in *figure 1.13*:
 
 ///insert mean sales in each region///
 ![mean sales in each region](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/mean%20sales%20in%20each%20region.png)
-
+*figure 1.13 - mean sales for XOne and PS4, by region (XOne-green, PS4-blue)*
 
 We could also look at the critic and user score averages for the games, and we can see that the critic ratings are approximately the same:( */100)
 
-XOne: 73.729560
+XOne: 73.729560, 
 PS4: 72.669456
 
 but the user scores: ( */10)
 
-XOne: 6.493082
+XOne: 6.493082, 
 PS4: 6.739331
 
 lean slightly in favour of the PS4, by about 2.4\% compared to the difference in critic scores: 1.1\%
