@@ -73,11 +73,11 @@ Cleaned_DataFrame.head()
 A videogame platform is the hardware used to play the videogame, and although it may seem arbitrary which culmination of plastic, circuitry and ingenuity is used to play a videogame, there are very big differences between them, both statistically and culturally.
 
 Because of these differences, different platforms *can* act as an isolated instance of videogame markets, where we can see how videogames succeed based on certain conditions which vary for each platform.
-*figure xxx* below shows the total number of videogame units sold on each platform, worldwide, if this number is more than 8,000:
+*figure 1.1* below shows the total number of videogame units sold on each platform, worldwide, if this number is more than 8,000:
 
-///insert global sales over all time for each platform///
+
 ![insert global sales over all time for each platform](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/global%20sales%20over%20all%20time%20for%20each%20console.png)
-*figure xxx*
+*figure 1.1 - global sales for each platform*
 
 We should first consider that biases towards certain platforms will exist. This bias, although minimal, is most obvious when comparing by region. The culture and history of each region most certainly has an effect on the platform purchased by a particular individual.
 
@@ -97,11 +97,11 @@ These changes made the data easier to process for the purpose of platform compar
 ### **Regional Bias**
 As mentioned previously, we will look at how the sales of videogames from particular platforms differ by region, mainly just to see how the bias changes. We will do this by counting the number of videogames on each platform, which have sales greater than 10,000 USD in each region.
 If one were to use only videogames available to all platforms, there would be very little data to observe so for this purposes of this analysis we will consider all videogames available to each platform.
-the data is shown below in *figures 1.1-1.6*:
+the data is shown below in *figures 1.2-1.6*:
 
 
 ///insert regional biases///
-*figure 1.1* *figure 1.2* *figure 1.3* *fig*
+*figure 1.2* *figure 1.3* *figure 1.4* *figure 1.5* * figure 1.6*
 
 Although the order of the number of videogames bought in each region for each platform varies from region to region, the general proportion of unique videogames purchased on each platform remains very similar.
 the region which sticks out the most is Japan, the general groupings of the Platforms remains the same but the order of those groupings change, i.e. the top 3 platforms with the most unique videogames are the same as the other regions however, PS2 is not #1 but #3.
@@ -112,6 +112,7 @@ Regional bias does play a part in the popularity of platform, but there are othe
 We started with the data from *figure xxx*, which shows the PS2, Xbox-360 (X360), and PS3 far ahead of the competition, this is hardly surprising given the increase in popularity of videogames after the release of the original Playstation (PS). From here we plotted the number of unique videogames available to the number of global sales on that platform, to obtain the *figure zzz*:
 
 ///insert global sales and games available///
+![insert global sales over all time for each platform](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/global%20sales%20over%20all%20time%20for%20each%20console.png)
 *figure zzz*
 
 from *figure zzz* we could see that there was a clear correlation between the number of videogames available and the videogame units sold worldwide, which is to be expected. This didn't really reveal much, as having more goods available will genrally lead to more sales, so we decided to normalize the data, according to the number of videogames available, so we could see the mean number of videogame units sold for each console.
@@ -228,8 +229,9 @@ To answer this, we plotted the unique genres versus the total global sales for t
 Below, the plot for the Videogame Genres vs Global Sales can be seen.
 
 ![Videogame Genres vs Global Sales](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Eduardo/Milestone%202/Eduardo_EDA_Plots/sales_by_genre.png)
+*Figure 2.1 - Videogame Genres vs Global Sales*
 
-From the above bar chart, we see that the *most popular game genre* is Action, followed by Sports and Shooter close behind.
+From *Figure 2.1*, we see that the *most popular game genre* is Action, followed by Sports and Shooter close behind.
 
 Action games include your Grand Theft Auto (GTA) games, Assassin's Creed games, Uncharted games, etc. Most of these games are a part of larger series, often having more than two, three, and more in the overall game collection. As a result of this, and the sheer amount of games, there are 1630 games which are Action games. 
 
@@ -242,8 +244,9 @@ Since there is such a variation in both the sales, roughly 1.2 billion, 833 mill
 To address this, we chose to normalize the bar chart, to show how much a game of each genre will make *on average*! Like this, we can more accurately see which game genre tends to make the most sales per game.
 
 ![Videogame Genres vs Global Sales Normalized](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Eduardo/Milestone%202/Eduardo_EDA_Plots/sales_by_genre_normalized.png)
+*Figure 2.2 - Videogame Genres vs Global Sales Normalized*
 
-Here we now see that the majority of  game genres sell between 650-850 thousand units with the high being for the Misc genre, which on average makes roughly 1.1 million units per game. Now, Misc, Platformers and Shooters, and Sports games genres tend to sell the most units per game on average.
+Here we now see in *Figure 2.2* that the majority of  game genres sell between 650-850 thousand units with the high being for the Misc genre, which on average makes roughly 1.1 million units per game. Now, Misc, Platformers and Shooters, and Sports games genres tend to sell the most units per game on average.
 
 The genre Misc includes a varied array of games, the category itself being a game which does not fit into any of the other mentioned categories. These games tend to be the digital board games or card games, Chess games, Wii Play, Kinnect games, the Just Dance series and more. As a result, the games in this section appeal to many, and makes logical sense that such a diverse genre tends to garner the most attention and sells the most units per game on average!
 
@@ -259,12 +262,14 @@ Again, like in the previous question, the unique Ratings for videogames was plot
 In this dataset, the ratings that are present are E, M, T, E10+, AO, and RP. These ratings are for Everyone (all ages), Mature (ages 17+), Teen a(ages 13+), Everyone 10+ (ages 10+), Adults Only (ages 18+), and finally Rating Pending, for games which have not yet recieved a final ESRB rating. 
 
 ![Videogame Ratings vs Global Sales](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Eduardo/Milestone%202/Eduardo_EDA_Plots/sales_by_rating.png)
+*Figure 2.3 - Videogame Ratings vs Global Sales*
 
-From the above bar chart, we see that the games which are rated *E* for Everyone are the *most sold game rating*. Follwoing closely behind are those games rated *M* for Mature and *T* for Teen. Games rated *E* sold almost 2 billion units worth of games, while games rated *M* and *T* sold roughly 1.4 and 1.3 billion units worth of games apiece.
+In *Figure 2.3*, we see that the games which are rated *E* for Everyone are the *most sold game rating*. Follwoing closely behind are those games rated *M* for Mature and *T* for Teen. Games rated *E* sold almost 2 billion units worth of games, while games rated *M* and *T* sold roughly 1.4 and 1.3 billion units worth of games apiece.
 
 Now, as we did with the previous question, we will normalize this plot and check again to see which videogame rating tends to sell the most units again on average. We make sure to do this because we have in total 2083 E rated games, 1433 M rated games, and 2377 T rated games. There is some differences between the the number of games rated *E* and those rated *T*. Yet, interestingly enough, we see clearly here that more of a game rating does not mean that the game will sell more! This was not the case represented in the previous question!
 
 ![Videogame Ratings vs Global Sales Normalized](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Eduardo/Milestone%202/Eduardo_EDA_Plots/sales_by_rating_normalized.png)
+*Figure 2.4 - Videogame Ratings vs Global Sales Normalized*
 
 From this normalized plot, we can see that M rated  games and E rated games appeal to the greatest and most general audience, which makes sense that they should be topping the global sales list with roughly a million units sold on average per game. The other two ratings which are for T and E10+ both made roughly 600 thousand units sold. RP did not have very many entries in the dataset, and finally, the major outlier in this graph is the AO. 
 
@@ -302,10 +307,13 @@ The first game (according to the dataset after it was cleaned) that was rated by
 
 ![AverageSaleForEachGameEachYear](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Nathan/Images/AverageSaleForEachGameEachYear.png?raw=true)
 
-
-
-
+![NumberOfEachGameReleased](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Nathan/Images/NumberOfGamesReleasedEachYear.png?raw=true)
+![TotalNumberOfSales](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Nathan/Images/TotalNumberOfSalesforEachPublisher.png?raw=true)
+![TotalSalesEachYear](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Nathan/Images/TotalSalesEachYear.png?raw=true)
 ------------------
 ## more stuff
+
+
 ------------------
 ## Conclusions
+
