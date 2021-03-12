@@ -59,8 +59,8 @@ each videogame can have up to 16 associated pieces of information, here is a des
 | Rating   |the ESRB rating of the game (according to the ESRB [ratings guide](https://www.esrb.org/ratings-guide/))|
 *critics are considered to be "Metacritic staff", non-Critics are considered to be Metacritic subscribers*
 
-all analysis performed first cleans the data as described below:
-  - removing all rows with na entries
+All analysis performed first cleans the data as described below:
+  - removing all rows with N/A entries
   - removing user scores with TBD
   - casting all entries in the table to their proper datatypes (they are all saved as strings), i.e. integers, floats, categories
 below is the head of our cleaned data:
@@ -75,7 +75,8 @@ A videogame platform is the hardware used to play the videogame, and although it
 Because of these differences, different platforms *can* act as an isolated instance of videogame markets, where we can see how videogames succeed based on certain conditions which vary for each platform.
 *figure xxx* below shows the total number of videogame units sold on each platform, worldwide, if this number is more than 8,000:
 
-//insert global sales over all time for each platform//
+///insert global sales over all time for each platform///
+![insert global sales over all time for each platform](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/global%20sales%20over%20all%20time%20for%20each%20console.png)
 *figure xxx*
 
 We should first consider that biases towards certain platforms will exist. This bias, although minimal, is most obvious when comparing by region. The culture and history of each region most certainly has an effect on the platform purchased by a particular individual.
@@ -99,7 +100,7 @@ If one were to use only videogames available to all platforms, there would be ve
 the data is shown below in *figures 1.1-1.6*:
 
 
-//insert regional biases//
+///insert regional biases///
 *figure 1.1* *figure 1.2* *figure 1.3* *fig*
 
 Although the order of the number of videogames bought in each region for each platform varies from region to region, the general proportion of unique videogames purchased on each platform remains very similar.
@@ -290,12 +291,17 @@ The answer to this is that the game *"Alter Ego"* was in fact re-released on the
 The first game (according to the dataset after it was cleaned) that was rated by the ESRB on its *original* release was *"Battle Arena Toshinden"*, which released on the original PlayStation in 1994 and was rated T for Teen. This confirms that the original games rated by the ESRB was in the year it was created in, in 1994. In the years following 1994 and the creation of the ESRB, we see more and more games steadily gain their ratings, which makes sense and is what we expect to see. 
 
 ------------------
-### *Which Publisher has the Most Sales Per Regin?*
-#The Publisher with the Most Sales per Game Globally is: Nintendo
+### _Which Publisher has the Most Sales Per Region?
+#The Publisher with the Most Sales per Game Globally is: Nintendo: 
 #The Publisher with the Most Sales per Game in North America is: RedOctane
 #The Publisher with the Most Sales per Game in Europe is: GT Interactive
 #The Publisher with the Most Sales per Game in Japan is: SquareSoft
 #The Publisher with the Most Sales per Game in Other Regions is: Hello Games
+
+![AverageNumberOfSalesPerGameforPublisher](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Nathan/Images/AverageNumberOfSalesPerGameforPublisher.png?raw=true)
+
+![AverageSaleForEachGameEachYear](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Nathan/Images/AverageSaleForEachGameEachYear.png?raw=true)
+
 
 
 
