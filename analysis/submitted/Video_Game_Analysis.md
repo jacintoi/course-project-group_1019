@@ -109,60 +109,66 @@ the region which sticks out the most is Japan, the general groupings of the Plat
 Regional bias does play a part in the popularity of platform, but there are other factors which play a more significant role in determining the success of a platform.
 #
 ### ** Number of available videogames **
-We started with the data from *figure xxx*, which shows the PS2, Xbox-360 (X360), and PS3 far ahead of the competition, this is hardly surprising given the increase in popularity of videogames after the release of the original Playstation (PS). From here we plotted the number of unique videogames available to the number of global sales on that platform, to obtain the *figure zzz*:
+We started with the data from *figure xxx*, which shows the PS2, Xbox-360 (X360), and PS3 far ahead of the competition, this is hardly surprising given the increase in popularity of videogames after the release of the original Playstation (PS). From here we plotted the number of unique videogames available to the number of global sales on that platform, to obtain the *figure 1.7*:
 
 ///insert global sales and games available///
-![insert global sales over all time for each platform](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/global%20sales%20over%20all%20time%20for%20each%20console.png)
-*figure zzz*
+![global sales and games available](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/global%20sales%20and%20games%20available.png)
+*figure 1.7 - global sales and unique games available scatter plot*
 
-from *figure zzz* we could see that there was a clear correlation between the number of videogames available and the videogame units sold worldwide, which is to be expected. This didn't really reveal much, as having more goods available will genrally lead to more sales, so we decided to normalize the data, according to the number of videogames available, so we could see the mean number of videogame units sold for each console.
+from *figure 1.7* we could see that there was a clear correlation between the number of videogames available and the videogame units sold worldwide, which is to be expected. This didn't really reveal much, as having more goods available will genrally lead to more sales, so we decided to normalize the data, according to the number of videogames available, so we could see the mean number of videogame units sold for each console.
 
-We then looked at the same figures after they were normalized, first *figure yyy*:
+We then looked at the same figures after they were normalized, first *figure 1.8*:
 
 ///insert mean global sales over all time for each platform///
-*figure yyy*
+![mean global sales over all time for each platform](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/mean%20global%20sales%20over%20all%20time%20for%20each%20console.png)
+*figure 1.8*
 
-and then *figure aaa*:
+and then *figure 1.9*:
 
 ///insert Normalized global sales and games available///
-*figure aaa*
+![Normalized global sales and games available](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/mean%20global%20sales%20and%20games%20available.png)
+*figure 1.9*
 
-from *figures aaa and yyy* we can see that the PS and Wii platforms, have teh highest mean number of units sold per videogame, and that the previous leaders, were still competetitive but did not standout as they did previously. Particularly *figure aaa* provided clear insight that releasing lots of videogames for a particular console had no straight-forward correlation to the number of units those videogames would sell. 
-We think this is pretty clear, but if you believe otherwise I challenge you to divine a simple relationship between the mean number of units sold per videogame, and the number of videogames available(using *figure aaa*). 
+from *figures 1.9 and 1.8* we can see that the PS and Wii platforms, have teh highest mean number of units sold per videogame, and that the previous leaders, were still competetitive but did not standout as they did previously. Particularly *figure 1.9* provided clear insight that releasing lots of videogames for a particular console had no straight-forward correlation to the number of units those videogames would sell. 
+We think this is pretty clear, but if you believe otherwise I challenge you to divine a simple relationship between the mean number of units sold per videogame, and the number of videogames available(using *figure 1.9*). 
 
-It should be safe to say that releasing lots of videogames for a particular platform does not guarantee the quality of those videogames, and this is very strongly reflected in *figure aaa*
+It should be safe to say that releasing lots of videogames for a particular platform does not guarantee the quality of those videogames, and this is very strongly reflected in *figure 1.9*
 #
 ### ** Platform timeframe **
 You would assume that a platform which has been releasing videogames over a longer period of time would be more succesful, as they would have more experience in the market. This is not necessarily true though as is shown below.
 
-Let's first have a look at the distrbution of videogame releases for each platform, by making a box and whisker plot, *figure bbb*:
+Let's first have a look at the distrbution of videogame releases for each platform, by making a box and whisker plot, *figure 1.10*:
 
 ///insert distribution of games for each console///
-*figure bbb*
+![distribution of games for each console](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/distribution%20of%20games%20for%20each%20console.png)
+*figure 1.10*
 
 here we can see that the lifespan of all of these platforms tends to be 4-10 years, with the GBA having active videogame releases for only 4 years, and the PS2 having active releases for a little over 10 years. The PC is the obvious outlier having released videogames for over 30 years, so we will end up removing it after confirming there is no fair comparison to it, as of 2016.
 
-Let's know have a look at the mean year of release for videogames on each platform, which is representation of what years the console was active for, and see if we can discuss what events may be behind the trends, see *figure ccc*:
+Let's know have a look at the mean year of release for videogames on each platform, which is representation of what years the console was active for, and see if we can discuss what events may be behind the trends, see *figure 1.11*:
 
 ///insert Expected year of release vs global sales///
-*figure ccc*
+![Expected year of release vs global sales](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/expected%20year%20of%20release%20vs%20global%20sales.png)
+*figure 1.11*
 
-from *figure ccc* we can see that there is an outlier in the PS2 and a spike in 2008-10 for certain platforms. Given our knowledge of the massive success of the PS, we can safely assume that the PS2's success was somewhat thanks to the rapport that people had with SONY (creator of the PS). This in turn propbably caused an increased demand for videogames, allowing the next generation of platforms (PS3, X360, Wii) to all experience great sales.
+from *figure 1.11* we can see that there is an outlier in the PS2 and a spike in 2008-10 for certain platforms. Given our knowledge of the massive success of the PS, we can safely assume that the PS2's success was somewhat thanks to the rapport that people had with SONY (creator of the PS). This in turn propbably caused an increased demand for videogames, allowing the next generation of platforms (PS3, X360, Wii) to all experience great sales.
 
 The generation after *that* was different yet again and was when, we believe, the competition between platform developers started to impact sales more definitively.
 #
 ### **competition and true comparison**
 The competition between platform developers was somewhat limited before 2010. One reason for this could be the limited online multiplayer experience before then, as once this environment became popular it was very important which platform you were playing on.
 
-So lets compare two consoles who have had feirce competition after this boom in online gaming, and are also somewhat similar in the lenght of time they have been around, see *figure ddd.1*:
+So lets compare two consoles who have had feirce competition after this boom in online gaming, and are also somewhat similar in the lenght of time they have been around, see *figure 1.12a*:
 
 ///insert global sales and years active for consoles///
-*figure ddd*
+![global sales and years active for consoles](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/Global%20sales%20and%20years%20active%20for%20consoles.png)
+*figure 1.12*
 
 obviously PC is an outlier, so we removed it as predicted:
 
-///insert global sales and years active for consoles///
-*figure ddd.1*
+///insert global sales and years active for consoles, adjusted///
+![global sales and years active for consoles, outlier removed](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/Global%20sales%20and%20years%20active%20for%20consoles%2C%20adjusted.png)
+*figure 1.12a*
 
 The XOne and PS4 are a pretty good choice, although relatively new, they are very similar, having been released within 7 days of each other.
 
@@ -170,8 +176,13 @@ The global sales of the XOne, are half that of the PS4, and the mean global sale
 the figures however appear to say that the only difference is found in the regional sales, where PS4 beats out XOne everywhere except north America, suggesting simply a high quality of product.
 
 ///insert X and PS4 pngs///
+![XOne data](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/X.png)
+![PS4 data](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/PS4.png)
 
-Microsoft produces XOne consoles and is based in North America, which leads to the assumption of brand loyalty and this idea of American Manufactoring and Nationalism tipping the scales in favor of XOne only in NA, whereas the rest of the world appears to choose the PS4.
+Microsoft produces XOne consoles and is based in North America, which leads to the assumption of brand loyalty and this idea of American Manufactoring and Nationalism tipping the scales in favor of XOne only in NA, whereas the rest of the world appears to choose the PS4, as seen in figure 1.13:
+
+///insert mean sales in each region///
+![mean sales in each region](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/mean%20sales%20in%20each%20region.png)
 
 
 We could also look at the critic and user score averages for the games, and we can see that the critic ratings are approximately the same:( */100)
@@ -229,6 +240,7 @@ To answer this, we plotted the unique genres versus the total global sales for t
 Below, the plot for the Videogame Genres vs Global Sales can be seen.
 
 ![Videogame Genres vs Global Sales](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Eduardo/Milestone%202/Eduardo_EDA_Plots/sales_by_genre.png)
+
 *Figure 2.1 - Videogame Genres vs Global Sales*
 
 From *Figure 2.1*, we see that the *most popular game genre* is Action, followed by Sports and Shooter close behind.
@@ -244,6 +256,7 @@ Since there is such a variation in both the sales, roughly 1.2 billion, 833 mill
 To address this, we chose to normalize the bar chart, to show how much a game of each genre will make *on average*! Like this, we can more accurately see which game genre tends to make the most sales per game.
 
 ![Videogame Genres vs Global Sales Normalized](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Eduardo/Milestone%202/Eduardo_EDA_Plots/sales_by_genre_normalized.png)
+
 *Figure 2.2 - Videogame Genres vs Global Sales Normalized*
 
 Here we now see in *Figure 2.2* that the majority of  game genres sell between 650-850 thousand units with the high being for the Misc genre, which on average makes roughly 1.1 million units per game. Now, Misc, Platformers and Shooters, and Sports games genres tend to sell the most units per game on average.
@@ -262,6 +275,7 @@ Again, like in the previous question, the unique Ratings for videogames was plot
 In this dataset, the ratings that are present are E, M, T, E10+, AO, and RP. These ratings are for Everyone (all ages), Mature (ages 17+), Teen a(ages 13+), Everyone 10+ (ages 10+), Adults Only (ages 18+), and finally Rating Pending, for games which have not yet recieved a final ESRB rating. 
 
 ![Videogame Ratings vs Global Sales](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Eduardo/Milestone%202/Eduardo_EDA_Plots/sales_by_rating.png)
+
 *Figure 2.3 - Videogame Ratings vs Global Sales*
 
 In *Figure 2.3*, we see that the games which are rated *E* for Everyone are the *most sold game rating*. Follwoing closely behind are those games rated *M* for Mature and *T* for Teen. Games rated *E* sold almost 2 billion units worth of games, while games rated *M* and *T* sold roughly 1.4 and 1.3 billion units worth of games apiece.
@@ -269,6 +283,7 @@ In *Figure 2.3*, we see that the games which are rated *E* for Everyone are the 
 Now, as we did with the previous question, we will normalize this plot and check again to see which videogame rating tends to sell the most units again on average. We make sure to do this because we have in total 2083 E rated games, 1433 M rated games, and 2377 T rated games. There is some differences between the the number of games rated *E* and those rated *T*. Yet, interestingly enough, we see clearly here that more of a game rating does not mean that the game will sell more! This was not the case represented in the previous question!
 
 ![Videogame Ratings vs Global Sales Normalized](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Eduardo/Milestone%202/Eduardo_EDA_Plots/sales_by_rating_normalized.png)
+
 *Figure 2.4 - Videogame Ratings vs Global Sales Normalized*
 
 From this normalized plot, we can see that M rated  games and E rated games appeal to the greatest and most general audience, which makes sense that they should be topping the global sales list with roughly a million units sold on average per game. The other two ratings which are for T and E10+ both made roughly 600 thousand units sold. RP did not have very many entries in the dataset, and finally, the major outlier in this graph is the AO. 
