@@ -380,4 +380,7 @@ The first game (according to the dataset after it was cleaned) that was rated by
 ## Conclusions
 
 - Releasing lots of games for a platform does guarantee the quality of those games, nor does releasing games for a long period of time, i.e. experience in the videogame industry does not appear to guarantee sales
-- competition has developed between platforms very recently due to advances in teh capabilities of platforms, and the greater number of 'quality' platforms.
+- competition has developed between platforms very recently due to advances in the capabilities of platforms, and the greater number of 'quality' platforms.
+- On average, the videogame sales based on the genres tends to be fairly close, though the most popular genres (based on the number of units sold) as those of the Misc., Platform, Shooter, and Sport genres.
+- The more popular game ratings are those games rated E and M, based on the average sales for each rating. This makes sense as these two ratings encompasses a siginificant portion of the genres present in this dataset.
+- The ESRB ratings began in 1994 which is when the ESRB was formed - however, there are also games which were **originally** released prior to this that are also rated. We discovered that these few games (those in the dataset that make up this condition) were all re-released at some point years later. It was this new release of the same game which recieved the ESRB rating, and due to both games, old and new, being nearly identical, the rating branched and applied as well to the original game.
