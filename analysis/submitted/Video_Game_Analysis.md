@@ -7,7 +7,7 @@ This general, combined, EDA is done in fulfilment of Task 5 for Milestone 2. Thi
 --------------------------
 ## Initialization:
 
-The analysis was performed using python and **requires** the following packages:
+The analysis was performed using python and **required** the following packages:
 
 ```
 import pandas as pd
@@ -26,7 +26,7 @@ sys.path.insert(1, '../scripts')
 ## Introduction
 This analysis looks at the different aspects of videogames over the past ~40 years using a random samples of videogames, representative of the entire industry, to relate real life qualitative events to measurable changes in the sales and consumption of videogames.
 
-The data used in this analysis was obtained from [kaggle](https://www.kaggle.com/rush4ratio/video-game-sales-with-ratings), and is a user compiled data set of videogames, which extends a scrape already performed by Metacritic, *"a website that aggregates reviews of films, TV shows, music albums, video games and formerly, books"* [Wikipedia](https://en.wikipedia.org/wiki/Metacritic). It includes over 16,000 unique video games, of which 6,825 have all entries complete.
+The data used in this analysis was obtained from [kaggle](https://www.kaggle.com/rush4ratio/video-game-sales-with-ratings), and is a user compiled data set of videogames, which extends a scrape already performed by Metacritic, *"a website that aggregates reviews of films, TV shows, music albums, video games and formerly, books"* ([Wikipedia](https://en.wikipedia.org/wiki/Metacritic)). It includes over 16,000 unique video games, of which 6,825 have all entries complete.
 
 This dataset does not contain all videogames from 1980-2016, and and so in this analysis it is considered a sample of that set of all videogames.
 each videogame can have up to 16 associated pieces of information, here is a description of each of them:
@@ -69,7 +69,9 @@ Cleaned_DataFrame.head()
 
 In approaching this EDA, we had come up with some questions to help guide our personal data exploration through this general analysis. These questions are listed below. 
 
-- ***For what reasons are sales different between different platforms?***
+- What correlation, if any, exists between the number of videogames available and the sales of videogames?
+- how does the timeframe the console is active for affect its sales?
+- Is competition a big factor in sales(does less competition mean more profits)?
 - 
 - Which videogame *genre* tends to *sell better / more*?
 - What is the *correlation* between *game ratings, sales, and genre*?
@@ -115,9 +117,9 @@ the data is shown below in *Figures 1.2-1.6*:
 
 | Regional      | Biases |
 | ----------- | ----------- |
-| *Figure 1.2 - unique games purchased globally*     | *Figure 1.3 - unique games purchased in North America*     |
-| *Figure 1.4 - unique games purchased in Europe*   | *Figure 1.5 - unique games purchased in Japan*      |
-| *Figure 1.6 - unique games purchased in other parts of the world*   | ------- |
+| ![unique games purchased globally](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/numAvail.png) *Figure 1.2 - unique games purchased globally*     | ![unique games purchased globally](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/numAvailNA.png) *Figure 1.3 - unique games purchased in North America*     |
+| ![unique games purchased globally](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/numAvailEU.png) *Figure 1.4 - unique games purchased in Europe*   | ![unique games purchased globally](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/numAvailJP.png) *Figure 1.5 - unique games purchased in Japan*      |
+| ![unique games purchased globally](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/numAvailOther.png) *Figure 1.6 - unique games purchased in other parts of the world*   | ------- |
 
 
 
