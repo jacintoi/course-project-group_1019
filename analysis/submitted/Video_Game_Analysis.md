@@ -334,14 +334,19 @@ The first game (according to the dataset after it was cleaned) that was rated by
 ## Publisher Games Sales 
 ### *Which Publisher has the Most Sales Per Region?*
 ![TotalNumberOfSales](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Nathan/Images/TotalNumberOfSalesforEachPublisher.png?raw=true)
-*Figure 3.4 -Total Number of Sales for Each Publisher*
-![TotalSalesEachYear]
+*Figure 3.1 -Total Number of Sales for Each Publisher*
 
--The Publisher with the Most Sales Globally is: EA Sports
+
+- The Publisher with the most Sales Globally between 1985-2016 is: Electronic Arts
+- The Publisher with the most Sales in North America between 1985-2016 is: Electronic Arts
+- The Publisher with the most Sales in Europe between 1985-2016 is: Electronic Arts
+- The Publisher with the most Sales in Japan between 1985-2016 is: Nintendo
+- The Publisher with the most Sales in Other Regions between 1985-2016 is: Electronic Arts
+
 ### *Which Publisher has the Most Sales per Game in Each Region?*
 
 ![AverageNumberOfSalesPerGameforPublisher](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Nathan/Images/AverageNumberOfSalesPerGameforPublisher.png?raw=true)
-*Figure 3.1 - Average Number of Sales per Game Released for Each Publisher*
+*Figure 3.2 - Average Number of Sales per Game Released for Each Publisher*
 
 - The Publisher with the Most Sales per Game Globally is: Nintendo 
 - The Publisher with the Most Sales per Game in North America is: RedOctane
@@ -351,21 +356,28 @@ The first game (according to the dataset after it was cleaned) that was rated by
 
 
 
-![AverageSaleForEachGameEachYear](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Nathan/Images/AverageSaleForEachGameEachYear.png?raw=true)
-*Figure 3.2 - Average Number of Sales per Game Released for Each Publisher*
 
-![NumberOfEachGameReleased](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Nathan/Images/NumberOfGamesReleasedEachYear.png?raw=true)
-*Figure 3.3 - Number of Games Released Each Year*
 
 ## Game Sales Over The Years
 
-(https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Nathan/Images/TotalSalesEachYear.png?raw=true)
-*Figure 3.4 -Total Sales Each Year*
+![TotalSalesEachYear](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Nathan/Images/TotalSalesEachYear.png?raw=true)
+*Figure 3.3 -Total Sales Each Year*
 
-------------------
-## more stuff
+
+
+
+![AverageSaleForEachGameEachYear](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Nathan/Images/AverageSaleForEachGameEachYear.png?raw=true)
+*Figure 3.4 - Average Number of Sales per Game Released for Each Publisher*
+
+![NumberOfEachGameReleased](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Nathan/Images/NumberOfGamesReleasedEachYear.png?raw=true)
+*Figure 3.5- Number of Games Released Each Year
+
+
+
 
 
 ------------------
 ## Conclusions
 
+- Releasing lots of games for a platform does guarantee the quality of those games, nor does releasing games for a long period of time, i.e. experience in the videogame industry does not appear to guarantee sales
+- competition has developed between platforms very recently due to advances in teh capabilities of platforms, and the greater number of 'quality' platforms.
