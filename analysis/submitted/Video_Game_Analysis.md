@@ -2,7 +2,7 @@
 
 In this project milestone, we set off to complete an exploratory data analysis (or EDA) task on a select dataset that was found publically available.
 
-This general, combined, EDA is done in fulfilment of Task 5 for Milestone 2. This markdown is being completed after each of us individually completed our own EDA's and our own analyses, drawing conclusions ind
+This general, combined, EDA is done in fulfilment of Task 5 for Milestone 2. This markdown is being completed after each of us individually completed our own EDA's and our own analyses, drawing conclusions individually first. This document is now a coalescence of all our individual parts into a single, summarative document which highlights the most important discoveries and take-aways from the seperate EDA's.
 
 ## Instructions:
 - You should remain focused on your research question(s) - it is very easy to get lost down rabbit holes in data analyses projects.
@@ -29,7 +29,8 @@ import numpy as np
 import sys
 sys.path.insert(1, '../scripts')
 
-# Imports the project_functions.py file containing the different functions particularly the cleaning function
+# Imports the project_functions.py file containing the
+# different functions particularly the cleaning function
 ```
 
 -----------------------
@@ -44,7 +45,7 @@ each videogame can have up to 16 associated pieces of information, here is a des
 | Column Name       | Description |
 | -----------       | ----------- |
 | Name              | The name of the videogame       |
-| Platform          | The hardware need to play this videogame        |
+| Platform          | The hardware needed to play this videogame        |
 | Year_of_Release   | The year this game was first released       |
 | Genre             | What genre this videogame falls under(i.e. sports, shooter, racing) |
 | Publisher         | The name of the company that finances the development and production of this videogame |
@@ -61,6 +62,9 @@ each videogame can have up to 16 associated pieces of information, here is a des
 | Rating            |the ESRB rating of the game (according to the ESRB [ratings guide](https://www.esrb.org/ratings-guide/))|
 *critics are considered to be "Metacritic staff", non-Critics are considered to be Metacritic subscribers*
 
+*Note: unless **all** entries for two particular videogame are **identical**, those two videogames are not identical,
+i.e. two videogames may have the same name, but are listed separately as their platforms may differ*
+
 All analysis performed first cleans the data as described below:
   - removing all rows with N/A entries
   - removing user scores with TBD
@@ -71,16 +75,16 @@ Cleaned_DataFrame = project_functions.load_and_process()
 Cleaned_DataFrame.head()
 ```
 -----------------
-## Platform
+## Platforms and Sales
 A videogame platform is the hardware used to play the videogame, and although it may seem arbitrary which culmination of plastic, circuitry and ingenuity is used to play a videogame, there are very big differences between them, both statistically and culturally.
 
 Because of these differences, different platforms *can* act as an isolated instance of videogame markets, where we can see how videogames succeed based on certain conditions which vary for each platform.
-*figure 1.1* below shows the total number of videogame units sold on each platform, worldwide, if this number is more than 8,000:
+*Figure 1.1* below shows the total number of videogame units sold on each platform, worldwide:
 
 
 ![global sales over all time for each platform](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/global%20sales%20over%20all%20time%20for%20each%20console.png)
 
-*figure 1.1 - global sales for each platform*
+*Figure 1.1 - global sales for each platform*
 
 We should first consider that biases towards certain platforms will exist. This bias, although minimal, is most obvious when comparing by region. The culture and history of each region most certainly has an effect on the platform purchased by a particular individual.
 
@@ -100,115 +104,105 @@ These changes made the data easier to process for the purpose of platform compar
 ### *Regional Bias*
 As mentioned previously, we will look at how the sales of videogames from particular platforms differ by region, mainly just to see how the bias changes. We will do this by counting the number of videogames on each platform, which have sales greater than 10,000 USD in each region.
 If one were to use only videogames available to all platforms, there would be very little data to observe so for this purposes of this analysis we will consider all videogames available to each platform.
-the data is shown below in *figures 1.2-1.6*:
+the data is shown below in *Figures 1.2-1.6*:
 
 
 ///insert regional biases///
 
-
+| Regional      | Biases |
 | ----------- | ----------- |
-| *figure 1.2 - unique games purchased globally*     | *figure 1.3 - unique games purchased in North America*     |
-| *figure 1.4 - unique games purchased in Europe*   | *figure 1.5 - unique games purchased in Japan*      |
-| *figure 1.6 - unique games purchased in other parts of the world*   | ------- |
+| *Figure 1.2 - unique games purchased globally*     | *Figure 1.3 - unique games purchased in North America*     |
+| *Figure 1.4 - unique games purchased in Europe*   | *Figure 1.5 - unique games purchased in Japan*      |
+| *Figure 1.6 - unique games purchased in other parts of the world*   | ------- |
 
 
 
-
-
-
-
-
-
-
-Although the order of the number of videogames bought in each region for each platform varies from region to region, the general proportion of unique videogames purchased on each platform remains very similar.
-the region which sticks out the most is Japan, the general groupings of the Platforms remains the same but the order of those groupings change, i.e. the top 3 platforms with the most unique videogames are the same as the other regions however, PS2 is not #1 but #3.
-
-Regional bias does play a part in the popularity of platform, but there are other factors which play a more significant role in determining the success of a platform.
+As you can see from *figures 1.2-1.6*, regional bias does play a part in the popularity of platform, but there are other factors which play a more significant role in determining the success of a platform.
 #
 ### *Number of available videogames*
-We started with the data from *figure xxx*, which shows the PS2, Xbox-360 (X360), and PS3 far ahead of the competition, this is hardly surprising given the increase in popularity of videogames after the release of the original Playstation (PS). From here we plotted the number of unique videogames available to the number of global sales on that platform, to obtain the *figure 1.7*:
+We started with the data from *Figure xxx*, which shows the PS2, Xbox-360 (X360), and PS3 far ahead of the competition, this is hardly surprising given the increase in popularity of videogames after the release of the original Playstation (PS). From here we plotted the number of unique videogames available to the number of global sales on that platform, to obtain the *Figure 1.7*:
 
 
 ![global sales and games available](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/global%20sales%20and%20games%20available.png)
 
-*figure 1.7 - global sales and unique games available scatter plot*
+*Figure 1.7 - global sales and unique games available scatter plot*
 
-from *figure 1.7* we could see that there was a clear correlation between the number of videogames available and the videogame units sold worldwide, which is to be expected. This didn't really reveal much, as having more goods available will genrally lead to more sales, so we decided to normalize the data, according to the number of videogames available, so we could see the mean number of videogame units sold for each console.
+from *Figure 1.7* we could see that there was a clear correlation between the number of videogames available and the videogame units sold worldwide, which is to be expected. This didn't really reveal much, as having more goods available will genrally lead to more sales, so we decided to normalize the data, according to the number of videogames available, so we could see the mean number of videogame units sold for each console.
 
-We then looked at the same figures after they were normalized, first *figure 1.8*:
+We then looked at the same figures after they were normalized, first *Figure 1.8*:
 
 
 ![mean global sales over all time for each platform](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/mean%20global%20sales%20over%20all%20time%20for%20each%20console.png)
 
-*figure 1.8 - mean global sales per game for each platform*
+*Figure 1.8 - mean global sales per game for each platform*
 
-and then *figure 1.9*:
+and then *Figure 1.9*:
 
 
 ![Normalized global sales and games available](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/mean%20global%20sales%20and%20games%20available.png)
 
-*figure 1.9 - mean global sales and unique games available scatter plot*
+*Figure 1.9 - mean global sales and unique games available scatter plot*
 
-from *figures 1.9 and 1.8* we can see that the PS and Wii platforms, have teh highest mean number of units sold per videogame, and that the previous leaders, were still competetitive but did not standout as they did previously. Particularly *figure 1.9* provided clear insight that releasing lots of videogames for a particular console had no straight-forward correlation to the number of units those videogames would sell. 
-We think this is pretty clear, but if you believe otherwise I challenge you to divine a simple relationship between the mean number of units sold per videogame, and the number of videogames available(using *figure 1.9*). 
+from *Figures 1.9 and 1.8* we can see that the PS and Wii platforms, have teh highest mean number of units sold per videogame, and that the previous leaders, were still competetitive but did not standout as they did previously. Particularly *Figure 1.9* provided clear insight that releasing lots of videogames for a particular console had no straight-forward correlation to the number of units those videogames would sell. 
+We think this is pretty clear, but if you believe otherwise I challenge you to divine a simple relationship between the mean number of units sold per videogame, and the number of videogames available(using *Figure 1.9*). 
 
-It should be safe to say that releasing lots of videogames for a particular platform does not guarantee the quality of those videogames, and this is very strongly reflected in *figure 1.9*
+It should be safe to say that releasing lots of videogames for a particular platform does not guarantee the quality of those videogames, and this is very strongly reflected in *Figure 1.9*
 #
 ### *Platform timeframe*
 You would assume that a platform which has been releasing videogames over a longer period of time would be more succesful, as they would have more experience in the market. This is not necessarily true though as is shown below.
 
-Let's first have a look at the distrbution of videogame releases for each platform, by making a box and whisker plot, *figure 1.10*:
+Let's first have a look at the distrbution of videogame releases for each platform, by making a box and whisker plot, *Figure 1.10*:
 
 
 ![distribution of games for each console](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/distribution%20of%20games%20for%20each%20console.png)
 
-*figure 1.10 - distribution of videogame releases over time*
+*Figure 1.10 - distribution of videogame releases over time*
 
-here we can see that the lifespan of all of these platforms tends to be 4-10 years, with the GBA having active videogame releases for only 4 years, and the PS2 having active releases for a little over 10 years. The PC is the obvious outlier having released videogames for over 30 years, so we will end up removing it after confirming there is no fair comparison to it, as of 2016.
+here we can see that the lifespan of all of these platforms tends to be 4-10 years, with the GBA having active videogame releases for only 4 years, and the PS2 having active releases for a little over 10 years. The PC is the obvious outlier having released videogames for over 30 years.
 
-Let's know have a look at the mean year of release for videogames on each platform, which is representation of what years the console was active for, and see if we can discuss what events may be behind the trends, see *figure 1.11*:
+Let's know have a look at the mean year of release for videogames on each platform, which is representation of what years the console was active for, and see if we can discuss what events may be behind the trends, see *Figure 1.11*:
 
 
 ![Expected year of release vs global sales](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/expected%20year%20of%20release%20vs%20global%20sales.png)
 
-*figure 1.11 - average year of release, for a videogame, for a given platform*
+*Figure 1.11 - average year of release, for a videogame, for a given platform*
 
-from *figure 1.11* we can see that there is an outlier in the PS2 and a spike in 2008-10 for certain platforms. Given our knowledge of the massive success of the PS, we can safely assume that the PS2's success was somewhat thanks to the rapport that people had with SONY (creator of the PS). This in turn propbably caused an increased demand for videogames, allowing the next generation of platforms (PS3, X360, Wii) to all experience great sales.
+From *Figure 1.11* we can see that there is an outlier in the PS2 and a spike in 2008-10 for certain platforms. Given our knowledge of the massive success of the PS, we can safely assume that the PS2's success was somewhat thanks to the rapport that people had with SONY (creator of the PS). This in turn propbably caused an increased demand for videogames, allowing the next generation of platforms (PS3, X360, Wii) to all experience great sales.
 
 The generation after *that* was different yet again and was when, we believe, the competition between platform developers started to impact sales more definitively.
 #
 ### *competition and true comparison*
 The competition between platform developers was somewhat limited before 2010. One reason for this could be the limited online multiplayer experience before then, as once this environment became popular it was very important which platform you were playing on.
 
-So lets compare two consoles who have had feirce competition after this boom in online gaming, and are also somewhat similar in the lenght of time they have been around, see *figure 1.12a*:
+So let's compare two consoles who have had feirce competition after this boom in online gaming, and are also somewhat similar in the lenght of time they have been around, see *Figure 1.12a*:
 
 
 ![global sales and years active for consoles](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/Global%20sales%20and%20years%20active%20for%20consoles.png)
 
-*figure 1.12 - global sales compared to years active*
+*Figure 1.12 - global sales compared to years active*
 
 obviously PC is an outlier, so we removed it as predicted:
 
 
 ![global sales and years active for consoles, outlier removed](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/Global%20sales%20and%20years%20active%20for%20consoles%2C%20adjusted.png)
 
-*figure 1.12a - global sales compared to years active (outliers removed)*
+*Figure 1.12a - global sales compared to years active (outliers removed)*
 
 The XOne and PS4 are a pretty good choice, although relatively new, they are very similar, having been released within 7 days of each other.
 
 The global sales of the XOne, are half that of the PS4, and the mean global sales of PS4 are 1.3 times that of the XOne, so there are some comparisons to be made.
-the figures however appear to say that the only difference is found in the regional sales, where PS4 beats out XOne everywhere except north America, suggesting simply a high quality of product:
+The figures however appear to say that the only difference is found in the regional sales, where PS4 beats out XOne everywhere except north America, suggesting simply a high quality of product:
 
 
 ![XOne data](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/X.png)
 ![PS4 data](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/PS4.png)
 
-Microsoft produces XOne consoles and is based in North America, which leads to the assumption of brand loyalty and this idea of American Manufactoring and Nationalism tipping the scales in favor of XOne only in NA, whereas the rest of the world appears to choose the PS4, as seen in *figure 1.13*:
+Microsoft produces XOne consoles and is based in North America, which leads to the assumption of brand loyalty and this idea of American Manufactoring and Nationalism tipping the scales in favor of XOne only in NA, whereas the rest of the world appears to choose the PS4, as seen in *Figure 1.13*:
 
 
 ![mean sales in each region](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Aidan/Milestone_2/mean%20sales%20in%20each%20region.png)
 
-*figure 1.13 - mean sales for XOne and PS4, by region (XOne-green, PS4-blue)*
+*Figure 1.13 - mean sales for XOne and PS4, by region (XOne-green, PS4-blue)*
 
 We could also look at the critic and user score averages for the games, and we can see that the critic ratings are approximately the same:( */100)
 
@@ -337,22 +331,37 @@ The answer to this is that the game *"Alter Ego"* was in fact re-released on the
 The first game (according to the dataset after it was cleaned) that was rated by the ESRB on its *original* release was *"Battle Arena Toshinden"*, which released on the original PlayStation in 1994 and was rated T for Teen. This confirms that the original games rated by the ESRB was in the year it was created in, in 1994. In the years following 1994 and the creation of the ESRB, we see more and more games steadily gain their ratings, which makes sense and is what we expect to see. 
 
 ------------------
-## Sales over the years
-
+## Publisher Games Sales 
 ### *Which Publisher has the Most Sales Per Region?*
+![TotalNumberOfSales](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Nathan/Images/TotalNumberOfSalesforEachPublisher.png?raw=true)
+*Figure 3.4 -Total Number of Sales for Each Publisher*
+![TotalSalesEachYear]
+
+-The Publisher with the Most Sales Globally is: EA Sports
+### *Which Publisher has the Most Sales per Game in Each Region?*
+
+![AverageNumberOfSalesPerGameforPublisher](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Nathan/Images/AverageNumberOfSalesPerGameforPublisher.png?raw=true)
+*Figure 3.1 - Average Number of Sales per Game Released for Each Publisher*
+
 - The Publisher with the Most Sales per Game Globally is: Nintendo 
 - The Publisher with the Most Sales per Game in North America is: RedOctane
 - The Publisher with the Most Sales per Game in Europe is: GT Interactive
 - The Publisher with the Most Sales per Game in Japan is: SquareSoft
 - The Publisher with the Most Sales per Game in Other Regions is: Hello Games
 
-![AverageNumberOfSalesPerGameforPublisher](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Nathan/Images/AverageNumberOfSalesPerGameforPublisher.png?raw=true)
+
 
 ![AverageSaleForEachGameEachYear](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Nathan/Images/AverageSaleForEachGameEachYear.png?raw=true)
+*Figure 3.2 - Average Number of Sales per Game Released for Each Publisher*
 
 ![NumberOfEachGameReleased](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Nathan/Images/NumberOfGamesReleasedEachYear.png?raw=true)
-![TotalNumberOfSales](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Nathan/Images/TotalNumberOfSalesforEachPublisher.png?raw=true)
-![TotalSalesEachYear](https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Nathan/Images/TotalSalesEachYear.png?raw=true)
+*Figure 3.3 - Number of Games Released Each Year*
+
+## Game Sales Over The Years
+
+(https://github.com/data301-2020-winter2/course-project-group_1019/blob/main/analysis/Nathan/Images/TotalSalesEachYear.png?raw=true)
+*Figure 3.4 -Total Sales Each Year*
+
 ------------------
 ## more stuff
 
