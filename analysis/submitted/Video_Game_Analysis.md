@@ -2,7 +2,7 @@
 
 In this project milestone, we set off to complete an exploratory data analysis (or EDA) task on a select dataset that was found publically available.
 
-This general, combined, EDA is done in fulfilment of Task 5 for Milestone 2. This is being 
+This general, combined, EDA is done in fulfilment of Task 5 for Milestone 2. This markdown is being completed after each of us individually completed our own EDA's and our own analyses, drawing conclusions ind
 
 ## Instructions:
 - You should remain focused on your research question(s) - it is very easy to get lost down rabbit holes in data analyses projects.
@@ -105,7 +105,7 @@ the data is shown below in *figures 1.2-1.6*:
 
 ///insert regional biases///
 
-| Syntax      | Description |
+
 | ----------- | ----------- |
 | *figure 1.2 - unique games purchased globally*     | *figure 1.3 - unique games purchased in North America*     |
 | *figure 1.4 - unique games purchased in Europe*   | *figure 1.5 - unique games purchased in Japan*      |
